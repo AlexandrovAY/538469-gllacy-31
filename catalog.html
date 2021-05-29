@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>Интернет-магазин мороженого GllacyShop</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/180.png">
+  <link rel="manifest" href="img/manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <header class="main-header container">
     <nav class="main-navigation">
       <a href="index.html">
-        <img src="img/logo.svg" width="154" height="64" alt="Логотип интернет-магазина мороженого Глейси">
+        <img src="img/logo/gllacy.svg" width="154" height="64" alt="Логотип интернет-магазина мороженого Глейси">
       </a>
       <ul class="main-menu">
         <li class="main-menu-item">
@@ -79,14 +85,16 @@
               <table>
                 <tr>
                   <td><button type="button">X</button></td>
-                  <td><img src="img/photo.jpg" alt="Пломбир с апельсиновым джемом"></td>
+                  <td><img src="img/catalog/orange-jam.jpg" width="33" height="33"
+                      alt="Оранжевое мороженное с апельсиновым джемом и цитрусовой стружкой"></td>
                   <td>Пломбир с апельсиновым джемом</td>
                   <td>1,5 кг х 200 руб.</td>
                   <td>300 руб.</td>
                 </tr>
                 <tr>
                   <td><button type="button">X</button></td>
-                  <td><img src="img/photo.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+                  <td><img src="img/catalog/strawberry.jpg" width="33" height="33"
+                      alt="Розовое клубничное мороженое с присыпкой сердечками"></td>
                   <td>Клубничный пломбир с присыпкой из белого шоколада</td>
                   <td>1,5 кг х 300 руб.</td>
                   <td>450 руб.</td>
@@ -148,16 +156,28 @@
       </fieldset>
       <fieldset class="form-fillers">
         <legend class="form-legend form-fillers-legend">Наполнители:</legend>
-        <input class="form-checkbox" type="checkbox" id="chocolate" name="checkbox-chocolate" checked>
-        <label for="chocolate">шоколадные</label>
-        <input class="form-checkbox" type="checkbox" id="sugar" name="checkbox-sugar" checked>
-        <label for="sugar">сахарные присыпки</label>
-        <input class="form-checkbox" type="checkbox" id="fruits" name="checkbox-fruits">
-        <label for="fruits">фрукты</label>
-        <input class="form-checkbox" type="checkbox" id="syrups" name="checkbox-syrups">
-        <label for="syrups">сиропы</label>
-        <input class="form-checkbox" type="checkbox" id="jam" name="checkbox-jam">
-        <label for="jam">джемы</label>
+        <div class="fillers-row">
+          <div class="fillers-field">
+            <input class="fillers-field-checkbox" type="checkbox" id="chocolate" name="checkbox-chocolate" checked>
+            <label for="chocolate">шоколадные</label>
+          </div>
+          <div class="fillers-field">
+            <input class="fillers-field-checkbox" type="checkbox" id="sugar" name="checkbox-sugar" checked>
+            <label for="sugar">сахарные присыпки</label>
+          </div>
+          <div class="fillers-field">
+            <input class="fillers-field-checkbox" type="checkbox" id="fruits" name="checkbox-fruits">
+            <label for="fruits">фрукты</label>
+          </div>
+          <div class="fillers-field">
+            <input class="fillers-field-checkbox" type="checkbox" id="syrups" name="checkbox-syrups">
+            <label for="syrups">сиропы</label>
+          </div>
+          <div class="fillers-field">
+            <input class="fillers-field-checkbox" type="checkbox" id="jam" name="checkbox-jam">
+            <label for="jam">джемы</label>
+          </div>
+        </div>
       </fieldset>
       <button class="btn-apply" type="button">Применить</button>
     </form>
@@ -169,48 +189,53 @@
           <h3 class="product-title">Сливочное с апельсиновым джемом и цитрусовой стружкой
             <a href="#"></a>
           </h3>
-          <img class="product-photo" src="img/img.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+          <img class="product-photo" src="img/catalog/orange-jam.jpg" width="267" height="267"
+            alt="Оранжевое мороженное с апельсиновым джемом и цитрусовой стружкой">
           <p class="product-price">310 ₽
             <span>/кг</span>
           </p>
-          <a class="product-preview" href="#">Быстрый просмотр</a>
+          <a class="product-preview" href="">Быстрый просмотр</a>
         </li>
         <li class="product-item">
           <h3 class="product-title">Сливочно-кофейное с кусочками шоколада
             <a href="#"></a>
           </h3>
-          <img class="product-photo" src="img/img.jpg" alt="Сливочно-кофейное с кусочками шоколада">
+          <img class="product-photo" src="img/catalog/coffee.jpg" width="267" height="267"
+            alt="Кофейное мороженное с кусочками шоколада">
           <p class="product-price">380 ₽
             <span>/кг</span>
           </p>
-          <a class="product-preview" href="#">Быстрый просмотр</a>
+          <a class="product-preview" href="">Быстрый просмотр</a>
         </li>
         <li class="product-item">
           <h3 class="product-title">Сливочно-клубничное с присыпкой из белого шоколада
             <a href="#"></a>
           </h3>
-          <img class="product-photo" src="img/img.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+          <img class="product-photo" src="img/catalog/strawberry.jpg" width="267" height="267"
+            alt="Розовое клубничное мороженое с присыпкой сердечками">
           <p class="product-price">355 ₽
             <span>/кг</span>
           </p>
-          <a class="product-preview" href="#">Быстрый просмотр</a>
+          <a class="product-preview" href="">Быстрый просмотр</a>
         </li>
         <li class="product-item">
           <h3 class="product-title">Сливочное крем-брюле с карамельной подливкой
             <a href="#"></a>
           </h3>
-          <img class="product-photo" src="img/img.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
+          <img class="product-photo" src="img/catalog/caramel.jpg" width="267" height="267"
+            alt="Бежевое ванильное мороженое с карамельным соусом">
           <p class="product-price">415 ₽
             <span>/кг</span>
           </p>
-          <a class="product-preview" href="#">Быстрый просмотр</a>
+          <a class="product-preview" href="">Быстрый просмотр</a>
         </li>
 
         <li class="product-item">
           <h3 class="product-title">Сливочное с брусничным джемом
             <a href="#"></a>
           </h3>
-          <img class="product-photo" src="img/img.jpg" alt="Сливочное с брусничным джемом">
+          <img class="product-photo" src="img/catalog/lingonberry.jpg" width="267" height="267"
+            alt="Красное мороженное с брусничным джемом">
           <p class="product-price">325 ₽
             <span>/кг</span>
           </p>
@@ -220,7 +245,8 @@
           <h3 class="product-title">Сливочно-черничное с цельными ягодами черники
             <a href="#"></a>
           </h3>
-          <img class="product-photo" src="img/img.jpg" alt="Сливочно-черничное с цельными ягодами черники">
+          <img class="product-photo" src="img/catalog/blueberry.jpg" width="267" height="267"
+            alt="Сливочное мороженное с цельными ягодами черники">
           <p class="product-price">410 ₽
             <span>/кг</span>
           </p>
@@ -230,7 +256,8 @@
           <h3 class="product-title">Сливочно-лимонное с карамельной присыпкой
             <a href="#"></a>
           </h3>
-          <img class="product-photo" src="img/img.jpg" alt="Сливочно-лимонное с карамельной присыпкой">
+          <img class="product-photo" src="img/catalog/lemon.jpg" width="267" height="267"
+            alt="Желтое лимонное мороженное с карамельной присыпкой">
           <p class="product-price">315 ₽
             <span>/кг</span>
           </p>
@@ -240,7 +267,8 @@
           <h3 class="product-title">Сливочное с шоколадной стружкой
             <a href="#"></a>
           </h3>
-          <img class="product-photo" src="img/img.jpg" alt="Сливочное с шоколадной стружкой">
+          <img class="product-photo" src="img/catalog/chocolate.jpg" width="267" height="267"
+            alt="Белое мороженное с шоколадной стружкой">
           <p class="product-price">320 ₽
             <span>/кг</span>
           </p>
@@ -251,7 +279,8 @@
           <h3 class="product-title">Сливочно-ванильное с кусочками шоколада
             <a href="#"></a>
           </h3>
-          <img class="product-photo" src="img/img.jpg" alt="Сливочно-ванильное с кусочками шоколада">
+          <img class="product-photo" src="img/catalog/vanilla.jpg" width="267" height="267"
+            alt="Желтое ванильное мороженное с кусочками шоколада">
           <p class="product-price">440 ₽
             <span>/кг</span>
           </p>
@@ -261,7 +290,8 @@
           <h3 class="product-title">Сливочноe с ментоловым сиропом
             <a href="#"></a>
           </h3>
-          <img class="product-photo" src="img/img.jpg" alt="Сливочноe с ментоловым сиропом">
+          <img class="product-photo" src="img/catalog/menthol.jpg" width="267" height="267"
+            alt="Зеленое мороженное с ментоловым сиропом">
           <p class="product-price">435 ₽
             <span>/кг</span>
           </p>
@@ -271,7 +301,8 @@
           <h3 class="product-title">Сливочное с кусочками черного шоколада
             <a href="#"></a>
           </h3>
-          <img class="product-photo" src="img/img.jpg" alt="Сливочное с кусочками черного шоколада">
+          <img class="product-photo" src="img/catalog/pieces-of-chocolate.jpg" width="267" height="267"
+            alt="Белое мороженное с кусочками черного шоколада">
           <p class="product-price">355 ₽
             <span>/кг</span>
           </p>
@@ -281,7 +312,8 @@
           <h3 class="product-title">Сливочное с мятным сиропом
             <a href="#"></a>
           </h3>
-          <img class="product-photo" src="img/img.jpg" alt="Сливочное с мятным сиропом">
+          <img class="product-photo" src="img/catalog/mint.jpg" width="267" height="267"
+            alt="Зеленое мороженное с мятным сиропом">
           <p class="product-price">420 ₽
             <span>/кг</span>
           </p>
@@ -363,7 +395,7 @@
     </ul>
 
     <div class="footer-copyright">
-      <img src="img/img.jpg" alt="Логотип HTMLAcademy">
+      <img src="img/logo/html-academy.svg" width="108" height="31" alt="Логотип HTMLAcademy">
       <p>Сделано в HTML Academy © 2021</p>
     </div>
   </footer>
