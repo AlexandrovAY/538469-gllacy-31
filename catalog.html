@@ -8,10 +8,12 @@
   <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/180.png">
   <link rel="manifest" href="img/manifest.webmanifest">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page-body inner-page">
   <header class="main-header container">
     <nav class="main-navigation">
       <a href="index.html">
@@ -19,7 +21,7 @@
       </a>
       <ul class="main-menu">
         <li class="main-menu-item">
-          <a href="catalog.html">Каталог</a>
+          <a class="main-menu-current">Каталог</a>
           <ul class="submenu">
             <li class="submenu-item">
               <a>Новинки</a>
@@ -27,8 +29,8 @@
             <li class="submenu-item">
               <a href="#">Сливочное</a>
             </li>
-            <li class="submenu-item">
-              <a href="#">Щербеты</a>
+            <li class="submenu-item submenu-current">
+              <a class="" href="#">Щербеты</a>
             </li>
             <li class="submenu-item">
               <a href="#">Фруктовый лед</a>
@@ -38,17 +40,17 @@
             </li>
           </ul>
         </li>
-        <li>
+        <li class="main-menu-item">
           <a href="delivery.html">Доставка и оплата</a>
         </li>
-        <li>
+        <li class="main-menu-item">
           <a href="about-company.html">О компании</a>
         </li>
       </ul>
       <div class="user-block">
         <ul class="user-block-list">
           <li class="search">
-            <a href="#">
+            <a class="user-button search-button" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
             <div class="popup-search">
@@ -58,20 +60,21 @@
             </div>
           </li>
           <li class="authorization">
-            <a href="#">Вход</a>
+            <a class="user-button authorization-button" href="#">Вход</a>
             <div class="popup-authorization">
               <form action="https://echo.htmlacademy.ru" method="post">
-                <div class="text-field field-email">
+                <div class="field-email">
                   <label>
-                    <input class="field-email-input" type="email" name="email" placeholder="email@example.com">
+                    <input class="text-field field-email-input" type="email" name="email"
+                      placeholder="email@example.com">
                   </label>
                 </div>
-                <div class="text-field field-password">
+                <div class="field-password">
                   <label>
-                    <input class="field-password-input" type="password" name="password" placeholder="......">
+                    <input class="text-field field-password-input" type="password" name="password" placeholder="......">
                   </label>
                 </div>
-                <button type="submit">Войти</button>
+                <button class="button button-signin" type="submit">Войти</button>
                 <div class="form-authorization-links">
                   <a href="#">Забыли пароль?</a>
                   <a href="#">Новая регистрация</a>
@@ -80,29 +83,33 @@
             </div>
           </li>
           <li class="cart">
-            <a href="#">2 товара</a>
-            <div class="popup-cart">
-              <table>
-                <tr>
-                  <td><button type="button">X</button></td>
-                  <td><img src="img/catalog/orange-jam.jpg" width="33" height="33"
-                      alt="Оранжевое мороженное с апельсиновым джемом и цитрусовой стружкой"></td>
-                  <td>Пломбир с апельсиновым джемом</td>
-                  <td>1,5 кг х 200 руб.</td>
-                  <td>300 руб.</td>
+            <a class="user-button cart-button cart-button-current" href="#">2 товара</a>
+            <div class="cart-popup">
+              <table class="cart-table">
+                <tr class="cart-product">
+                  <td>
+                    <button type="button">X</button>
+                  </td>
+                  <td>
+                    <img src="img/catalog/orange-jam.jpg" width="33" height="33"
+                      alt="Оранжевое мороженное с апельсиновым джемом и цитрусовой стружкой">
+                  </td>
+                  <td class="cart-product-desc">Пломбир с апельсиновым джемом</td>
+                  <td class="cart-product-qty">1,5 кг х 200 руб.</td>
+                  <td class="cart-product-price">300 руб.</td>
                 </tr>
-                <tr>
+                <tr class="cart-product">
                   <td><button type="button">X</button></td>
                   <td><img src="img/catalog/strawberry.jpg" width="33" height="33"
                       alt="Розовое клубничное мороженое с присыпкой сердечками"></td>
-                  <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                  <td>1,5 кг х 300 руб.</td>
-                  <td>450 руб.</td>
+                  <td class="cart-product-desc">Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td class="cart-product-qty">1,5 кг х 300 руб.</td>
+                  <td class="cart-product-price">450 руб.</td>
                 </tr>
               </table>
               <hr>
-              <p>Итого: 750 руб.</p>
-              <a class="cart-btn-buy" href="#">Оформить заказ</a>
+              <p class="cart-total">Итого: 750 руб.</p>
+              <a class="button cart-button-buy" href="#">Оформить заказ</a>
             </div>
           </li>
         </ul>
@@ -116,32 +123,32 @@
 
   <main class="main container">
     <ul class="breadcrumbs">
-      <li>
+      <li class="breadcrumbs-item">
         <a href="#">Главная</a>
       </li>
-      <li>
+      <li class="breadcrumbs-item">
         <a href="#">Каталог</a>
       </li>
-      <li>
-        <a>Сливочное</a>
+      <li class="breadcrumbs-item">
+        <a class="breadcrumbs-current">Сливочное</a>
       </li>
     </ul>
-    <h1>Сливочное мороженое</h1>
+    <h1 class="main-heading">Сливочное мороженое</h1>
 
     <form class="form-filters" action="https://echo.htmlacademy.ru" method="post">
-      <h2 class="vissualy-hidden">Фильтры</h2>
+      <h2 class="visually-hidden">Фильтры</h2>
       <fieldset class="form-sorting">
         <legend class="form-legend form-sorting-legend">Сортировка</legend>
-        <select name="sorting">
-          <option value="by popularity">по популярности</option>
-          <option value="ascending">сначала недорогие</option>
-          <option value="descending">сначала дорогие</option>
-          <option value="by fat content">по жирности</option>
+        <select class="sorting" name="sorting">
+          <option class="sorting-item" value="by popularity">по популярности</option>
+          <option class="sorting-item" value="ascending">сначала недорогие</option>
+          <option class="sorting-item" value="descending">сначала дорогие</option>
+          <option class="sorting-item" value="by fat content">по жирности</option>
         </select>
       </fieldset>
       <fieldset class="form-price">
         <legend class="form-legend form-price-legend">Цена: 100 ₽ – 500 ₽</legend>
-        <input type="range" name="range" id="range" min="100" max="500">
+        <input class="range-price" type="range" name="range" id="range" min="100" max="500">
       </fieldset>
       <fieldset class="form-fat">
         <legend class="form-legend form-fat-legend">Жирность</legend>
@@ -156,30 +163,31 @@
       </fieldset>
       <fieldset class="form-fillers">
         <legend class="form-legend form-fillers-legend">Наполнители:</legend>
-        <div class="fillers-row">
-          <div class="fillers-field">
-            <input class="fillers-field-checkbox" type="checkbox" id="chocolate" name="checkbox-chocolate" checked>
+        <div class="filter-row">
+          <div class="filter-field">
+            <input class="filter-input" type="checkbox" id="chocolate" name="checkbox-chocolate" value="chocolate"
+              checked>
             <label for="chocolate">шоколадные</label>
           </div>
-          <div class="fillers-field">
-            <input class="fillers-field-checkbox" type="checkbox" id="sugar" name="checkbox-sugar" checked>
+          <div class="filter-field">
+            <input class="filter-input" type="checkbox" id="sugar" name="checkbox-sugar" value="sugar" checked>
             <label for="sugar">сахарные присыпки</label>
           </div>
-          <div class="fillers-field">
-            <input class="fillers-field-checkbox" type="checkbox" id="fruits" name="checkbox-fruits">
+          <div class="filter-field">
+            <input class="filter-input" type="checkbox" id="fruits" name="checkbox-fruits" value="fruits">
             <label for="fruits">фрукты</label>
           </div>
-          <div class="fillers-field">
-            <input class="fillers-field-checkbox" type="checkbox" id="syrups" name="checkbox-syrups">
+          <div class="filter-field">
+            <input class="filter-input" type="checkbox" id="syrups" name="checkbox-syrups" value="syrups">
             <label for="syrups">сиропы</label>
           </div>
-          <div class="fillers-field">
-            <input class="fillers-field-checkbox" type="checkbox" id="jam" name="checkbox-jam">
+          <div class="filter-field">
+            <input class="filter-input" type="checkbox" id="jam" name="checkbox-jam" value="jam">
             <label for="jam">джемы</label>
           </div>
         </div>
       </fieldset>
-      <button class="btn-apply" type="button">Применить</button>
+      <button class="button-apply" type="button">Применить</button>
     </form>
 
     <section>
@@ -194,7 +202,7 @@
           <p class="product-price">310 ₽
             <span>/кг</span>
           </p>
-          <a class="product-preview" href="">Быстрый просмотр</a>
+          <a class="product-preview" href="#">Быстрый просмотр</a>
         </li>
         <li class="product-item">
           <h3 class="product-title">Сливочно-кофейное с кусочками шоколада
@@ -205,7 +213,7 @@
           <p class="product-price">380 ₽
             <span>/кг</span>
           </p>
-          <a class="product-preview" href="">Быстрый просмотр</a>
+          <a class="product-preview" href="#">Быстрый просмотр</a>
         </li>
         <li class="product-item">
           <h3 class="product-title">Сливочно-клубничное с присыпкой из белого шоколада
@@ -216,7 +224,7 @@
           <p class="product-price">355 ₽
             <span>/кг</span>
           </p>
-          <a class="product-preview" href="">Быстрый просмотр</a>
+          <a class="product-preview" href="#">Быстрый просмотр</a>
         </li>
         <li class="product-item">
           <h3 class="product-title">Сливочное крем-брюле с карамельной подливкой
@@ -227,7 +235,7 @@
           <p class="product-price">415 ₽
             <span>/кг</span>
           </p>
-          <a class="product-preview" href="">Быстрый просмотр</a>
+          <a class="product-preview" href="#">Быстрый просмотр</a>
         </li>
 
         <li class="product-item">
@@ -327,7 +335,7 @@
         <a>&lt;</a>
       </li>
       <li class="pagination-item">
-        <a>1</a>
+        <a class="pagination-current">1</a>
       </li>
       <li class="pagination-item">
         <a href="#">2</a>
@@ -349,29 +357,29 @@
 
   <footer class="main-footer container">
     <ul class="footer-social">
-      <li>
-        <a href="#" class="social-btn social-btn-fb">
+      <li class="social-item">
+        <a href="#" class="social-button social-button-fb">
           <span class="visually-hidden">
             Глейси в Фейсбуке
           </span>
         </a>
       </li>
-      <li>
-        <a href="#" class="social-btn social-btn-vk">
+      <li class="social-item">
+        <a href="#" class="social-button social-button-vk">
           <span class="visually-hidden">
             Глейси в ВКонтакте
           </span>
         </a>
       </li>
-      <li>
-        <a href="#" class="social-btn social-btn-inst">
+      <li class="social-item">
+        <a href="#" class="social-button social-button-inst">
           <span class="visually-hidden">
             Глейси в Инстаграмме
           </span>
         </a>
       </li>
-      <li>
-        <a href="#" class="social-btn social-btn-tg">
+      <li class="social-item">
+        <a href="#" class="social-button social-button-tg">
           <span class="visually-hidden">
             Глейси в Телеграмме
           </span>

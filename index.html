@@ -8,10 +8,12 @@
   <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/180.png">
   <link rel="manifest" href="img/manifest.webmanifest">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page-body">
   <header class="main-header container">
     <nav class="main-navigation">
       <a>
@@ -38,40 +40,41 @@
             </li>
           </ul>
         </li>
-        <li>
+        <li class="main-menu-item">
           <a href="delivery.html">Доставка и оплата</a>
         </li>
-        <li>
+        <li class="main-menu-item">
           <a href="about-company.html">О компании</a>
         </li>
       </ul>
       <div class="user-block">
         <ul class="user-block-list">
           <li class="search">
-            <a href="#">
+            <a class="user-button search-button" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
             <div class="popup-search">
               <label>
-                <input class="text-field field-search-input" type="text" name="field-search">
+                <input class="text-field field-search-input" type="text" name="field-search" placeholder="Крем-брюле">
               </label>
             </div>
           </li>
           <li class="authorization">
-            <a href="#">Вход</a>
+            <a class="user-button authorization-button" href="#">Вход</a>
             <div class="popup-authorization">
               <form action="https://echo.htmlacademy.ru" method="post">
-                <div class="text-field field-email">
+                <div class="field-email">
                   <label>
-                    <input class="field-email-input" type="email" name="email" placeholder="email@example.com">
+                    <input class="text-field field-email-input" type="email" name="email"
+                      placeholder="email@example.com">
                   </label>
                 </div>
-                <div class="text-field field-password">
+                <div class="field-password">
                   <label>
-                    <input class="field-password-input" type="password" name="password" placeholder="......">
+                    <input class="text-field field-password-input" type="password" name="password" placeholder="......">
                   </label>
                 </div>
-                <button type="submit">Войти</button>
+                <button class="button button-signin" type="submit">Войти</button>
                 <div class="form-authorization-links">
                   <a href="#">Забыли пароль?</a>
                   <a href="#">Новая регистрация</a>
@@ -80,7 +83,7 @@
             </div>
           </li>
           <li class="cart">
-            <a href="#">Пусто</a>
+            <a class="user-button cart-button" href="#">Пусто</a>
           </li>
         </ul>
       </div>
@@ -99,30 +102,30 @@
         <h2 class="slider-title">Крем-брюле и пломбир с малиновым джемом</h2>
         <img class="slider-photo" src="img/slider/creme-brulee.png" width="647" height="584"
           alt="Крем-брюле и пломбир с малиновым джемом">
-        <a class="slider-button" href="#">Давайте оба!</a>
+        <a class="button slider-button" href="#">Давайте оба!</a>
       </div>
       <div class="slider-item">
         <h2 class="slider-title">Шоколадный пломбир и лимонный сорбет</h2>
         <img class="slider-photo" src="img/slider/chocolate-ice-cream.png" width="645" height="582"
           alt="Шоколадный пломбир и лимонный сорбет">
-        <a class="slider-button" href="#">Давайте оба!</a>
+        <a class="button slider-button" href="#">Давайте оба!</a>
       </div>
       <div class="slider-item">
         <h2 class="slider-title">Пломбир с помадкой и клубничный щербет</h2>
         <img class="slider-photo" src="img/slider/sundae-and-strawberry-sorbet.png" width="639" height="582"
           alt="Пломбир с помадкой и клубничный щербет">
-        <a class="slider-button" href="#">Давайте оба!</a>
+        <a class="button slider-button" href="#">Давайте оба!</a>
       </div>
       <div class="slider-switcher">
-        <ul>
+        <ul class="slider-list">
           <li class="slider-dot-active">
-            <button class="switcher-btn" type="button"></button>
+            <button class="switcher-button" type="button"></button>
           </li>
           <li>
-            <button class="switcher-btn" type="button"></button>
+            <button class="switcher-button" type="button"></button>
           </li>
           <li>
-            <button class="switcher-btn" type="button"></button>
+            <button class="switcher-button" type="button"></button>
           </li>
         </ul>
       </div>
@@ -134,14 +137,14 @@
         <p class="stock-description">
           При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
         </p>
-        <a class="stock-btn-buy" href="#">Хочу варенье!</a>
+        <a class="button stock-buy" href="#">Хочу варенье!</a>
       </div>
       <div class="stock stock-chocolate">
         <h3 class="stock-name">Шоколадки даром!</h3>
         <p class="stock-description">
           При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
         </p>
-        <a class="stock-btn-buy" href="#">Хочу шоколадки!</a>
+        <a class="button stock-buy" href="#">Хочу шоколадки!</a>
       </div>
     </section>
 
@@ -157,7 +160,7 @@
           <p class="product-price">310 ₽
             <span>/кг</span>
           </p>
-          <a class="product-preview" href="">Быстрый просмотр</a>
+          <a class="button product-preview" href="">Быстрый просмотр</a>
         </li>
         <li class="product-item product-hit">
           <h3 class="product-title">Сливочно-кофейное с кусочками шоколада
@@ -223,7 +226,6 @@
       <h2 class="visually-hidden">Блог и рассылка</h2>
       <article class="blog">
         <h3 class="blog-heading">Новое в нашем блоге</h3>
-        <img src="img/blog-background.jpg" width="560" height="220" alt="Сервировка фруктовых щербетов">
         <p class="blog-description">10 способов сервировки фруктовых щербетов к столу</p>
       </article>
       <form class="subscription" action="https://echo.htmlacademy.ru" method="post">
@@ -232,8 +234,9 @@
           Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
         </p>
         <label for="subscription-email"></label>
-        <input type="email" name="subscription-email" id="subscription-email" placeholder="email@example.com">
-        <button class="btn btn-send" type="submit" name="btn-send">Отправить</button>
+        <input class="text-field" type="email" name="subscription-email" id="subscription-email"
+          placeholder="email@example.com">
+        <button class="button button-send" type="submit" name="button-send">Отправить</button>
       </form>
     </section>
 
@@ -246,36 +249,36 @@
         <p class="map-description">Для заказов по телефону:</p>
         <a class="map-phone" href="tel:+78005558628">+7 800 555-86-28</a>
         <p class="map-description">(с 10 до 20 ежедневно)</p>
-        <a class="feedback" href="#">Форма обратной связи</a>
+        <a class="button button-feedback" href="#">Форма обратной связи</a>
       </div>
     </section>
   </main>
 
   <footer class="main-footer container">
-    <ul class="footer-social">
-      <li>
-        <a href="#" class="social-btn social-btn-fb">
+    <ul class="social-list">
+      <li class="social-item">
+        <a href="#" class="social-button social-button-fb">
           <span class="visually-hidden">
             Глейси в Фейсбуке
           </span>
         </a>
       </li>
-      <li>
-        <a href="#" class="social-btn social-btn-vk">
+      <li class="social-item">
+        <a href="#" class="social-button social-button-vk">
           <span class="visually-hidden">
             Глейси в ВКонтакте
           </span>
         </a>
       </li>
-      <li>
-        <a href="#" class="social-btn social-btn-inst">
+      <li class="social-item">
+        <a href="#" class="social-button social-button-inst">
           <span class="visually-hidden">
             Глейси в Инстаграмме
           </span>
         </a>
       </li>
-      <li>
-        <a href="#" class="social-btn social-btn-tg">
+      <li class="social-item">
+        <a href="#" class="social-button social-button-tg">
           <span class="visually-hidden">
             Глейси в Телеграмме
           </span>
@@ -307,18 +310,19 @@
   <div class="popup-feedback">
     <form action="https://echo.htmlacademy.ru" method="post">
       <h3>Мы обязательно вам ответим!</h3>
-      <div class="text-field field-feedback-name">
-        <label for="feedback-name">Имя и фамилия</label>
-        <input class="feedback-name-input" type="text" name="popup-feedback-name" id="feedback-name"
+      <div class="field-feedback-name">
+        <label class="visually-hidden" for="feedback-name">Имя и фамилия</label>
+        <input class="text-field feedback-name-input" type="text" name="popup-feedback-name" id="feedback-name"
           placeholder="Имя Фамилия">
       </div>
-      <div class="text-field field-feedback-email">
-        <label for="feedback-email">EMail</label>
-        <input class="feedback-email-input" type="email" name="popup-feedback-email" id="feedback-email"
+      <div class="field-feedback-email">
+        <label class="visually-hidden" for="feedback-email">EMail</label>
+        <input class="text-field feedback-email-input" type="email" name="popup-feedback-email" id="feedback-email"
           placeholder="email@example.com">
       </div>
       <textarea class="text-field field-textarea">В свободной форме</textarea>
-      <button type="submit" class="btn">Отправить</button>
+      <button type="submit" class="button button-submit">Отправить</button>
+      <button type="button" class="button-close">Закрыть</button>
     </form>
   </div>
 
