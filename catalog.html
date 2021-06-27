@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
+
 <head>
   <meta charset="utf-8">
   <title>Интернет-магазин мороженого GllacyShop</title>
@@ -11,42 +12,43 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="page-body inner-page">
   <header class="main-header container">
-    <nav class="main-navigation">
-
+    <div class="main-header-top">
       <a class="main-navigation-logo" href="index.html">
         <img src="img/logo/gllacy.svg" width="154" height="64" alt="Логотип интернет-магазина мороженого Глейси">
       </a>
-      <ul class="main-menu list-reset">
-        <li class="main-menu-item">
-          <a class="main-menu-link main-menu-current">Каталог</a>
-          <ul class="submenu list-reset visually-hidden">
-            <li class="submenu-item">
-              <a>Новинки</a>
-            </li>
-            <li class="submenu-item">
-              <a href="#">Сливочное</a>
-            </li>
-            <li class="submenu-item submenu-current">
-              <a class="" href="#">Щербеты</a>
-            </li>
-            <li class="submenu-item">
-              <a href="#">Фруктовый лед</a>
-            </li>
-            <li class="submenu-item">
-              <a href="#">Мелорин</a>
-            </li>
-          </ul>
-        </li>
-        <li class="main-menu-item">
-          <a class="main-menu-link" href="delivery.html">Доставка и оплата</a>
-        </li>
-        <li class="main-menu-item">
-          <a class="main-menu-link" href="about-company.html">О компании</a>
-        </li>
-      </ul>
-
+      <nav class="main-navigation">
+        <ul class="main-menu list-reset">
+          <li class="main-menu-item">
+            <a class="main-menu-link main-menu-current">Каталог</a>
+            <ul class="submenu list-reset">
+              <li class="submenu-item">
+                <a class="submenu-link">Новинки</a>
+              </li>
+              <li class="submenu-item">
+                <a class="submenu-link submenu-link-current" href="#">Сливочное</a>
+              </li>
+              <li class="submenu-item submenu-current">
+                <a class="submenu-link" href="#">Щербеты</a>
+              </li>
+              <li class="submenu-item">
+                <a class="submenu-link" href="#">Фруктовый лед</a>
+              </li>
+              <li class="submenu-item">
+                <a class="submenu-link" href="#">Мелорин</a>
+              </li>
+            </ul>
+          </li>
+          <li class="main-menu-item">
+            <a class="main-menu-link" href="delivery.html">Доставка и оплата</a>
+          </li>
+          <li class="main-menu-item">
+            <a class="main-menu-link" href="about-company.html">О компании</a>
+          </li>
+        </ul>
+      </nav>
       <div class="user-block">
         <ul class="user-block-list list-reset">
           <li class="user-block-item search">
@@ -56,7 +58,7 @@
                 <path d="M16 14.665l-4.921-4.932a6.144 6.144 0 00-.994-8.273 6.113 6.113 0 00-8.307.352 6.141 6.141 0 00-.293 8.328 6.11 6.11 0 008.262.937L14.659 16 16 14.665zm-9.918-4.288a4.245 4.245 0 01-3.928-2.63 4.269 4.269 0 01.922-4.643 4.248 4.248 0 014.632-.923 4.253 4.253 0 012.624 3.936 4.274 4.274 0 01-1.247 3.01 4.256 4.256 0 01-3.003 1.25z" fill="#fff" />
               </svg>
             </a>
-            <div class="popup-search visually-hidden">
+            <div class="popup-search">
               <label>
                 <input class="text-field field-search-input" type="text" name="field-search" placeholder="Крем-брюле">
               </label>
@@ -69,7 +71,7 @@
                 <path d="M18 0H5a2 2 0 00-2 2v2h2V2h13v15H5v-2H3v2a2 2 0 002 2h13a2 2 0 002-2V2a2 2 0 00-2-2z" fill="#fff" />
               </svg>
             </a>
-            <div class="popup-authorization visually-hidden">
+            <div class="popup-authorization">
               <form action="https://echo.htmlacademy.ru" method="post">
                 <div class="form-field">
                   <label>
@@ -98,7 +100,7 @@
                 <path class="icon-cart-fill" d="M0.935059 0.0299911L1.97297 8.99999H12.5032L13.6923 0.0299911H0.935059Z" fill="#E84D37" />
               </svg>
             </a>
-            <div class="cart-popup visually-hidden">
+            <div class="cart-popup">
               <table class="cart-table">
                 <tr class="cart-product">
                   <td>
@@ -125,17 +127,9 @@
             </div>
           </li>
         </ul>
-        <div class="about-work">
-          <p class="schedule">с 10 до 20, ежедневно</p>
-          <a class="work-phone" href="tel:+78124502525">8 812 450-25-25</a>
-        </div>
       </div>
-    </nav>
-
-  </header>
-
-  <main class="main">
-    <div class="container">
+    </div>
+    <div class="main-header-bottom">
       <ul class="breadcrumbs list-reset">
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="#">Главная</a>
@@ -147,8 +141,18 @@
           <a class="breadcrumbs-link breadcrumbs-current">Сливочное</a>
         </li>
       </ul>
-      <h1 class="main-heading">Сливочное мороженое</h1>
+      <div class="about-work">
+        <p class="schedule">с 10 до 20, ежедневно</p>
+        <a class="work-phone" href="tel:+78124502525">8 812 450-25-25</a>
+      </div>
+    </div>
 
+
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <h1 class="main-heading">Сливочное мороженое</h1>
       <form class="form-filters" action="https://echo.htmlacademy.ru" method="post">
         <h2 class="visually-hidden">Фильтры</h2>
         <div class="index-row">
@@ -175,19 +179,19 @@
             <legend class="form-legend form-fat-legend">Жирность</legend>
             <div class="filter-fat-row">
               <div class="filter-fat-field">
-                <input class="form-radio" type="radio" name="fat" value="0" id="s1">
+                <input class="form-radio visually-hidden" type="radio" name="fat" value="0" id="s1">
                 <label class="form-radio-label" for="s1">0%</label>
               </div>
               <div class="filter-fat-field">
-                <input class="form-radio" type="radio" name="fat" value="до 10" id="s2" checked>
+                <input class="form-radio visually-hidden" type="radio" name="fat" value="до 10" id="s2" checked>
                 <label class="form-radio-label" for="s2">до 10%</label>
               </div>
               <div class="filter-fat-field">
-                <input class="form-radio" type="radio" name="fat" value="до 30" id="s3">
+                <input class="form-radio visually-hidden" type="radio" name="fat" value="до 30" id="s3">
                 <label class="form-radio-label" for="s3">до 30%</label>
               </div>
               <div class="filter-fat-field">
-                <input class="form-radio" type="radio" name="fat" value="выше 30" id="s4">
+                <input class="form-radio visually-hidden" type="radio" name="fat" value="выше 30" id="s4">
                 <label class="form-radio-label" for="s4">выше 30%</label>
               </div>
             </div>
@@ -198,23 +202,23 @@
             <legend class="form-legend form-fillers-legend">Наполнители:</legend>
             <div class="filter-row">
               <div class="filter-field">
-                <input class="filter-checkbox-input" type="checkbox" id="chocolate" name="checkbox-chocolate" value="chocolate" checked>
+                <input class="filter-checkbox-input visually-hidden" type="checkbox" id="chocolate" name="checkbox-chocolate" value="chocolate" checked>
                 <label class="filter-checkbox-label" for="chocolate">шоколадные</label>
               </div>
               <div class="filter-field">
-                <input class="filter-checkbox-input" type="checkbox" id="sugar" name="checkbox-sugar" value="sugar" checked>
+                <input class="filter-checkbox-input visually-hidden" type="checkbox" id="sugar" name="checkbox-sugar" value="sugar" checked>
                 <label class="filter-checkbox-label" for="sugar">сахарные присыпки</label>
               </div>
               <div class="filter-field">
-                <input class="filter-checkbox-input" type="checkbox" id="fruits" name="checkbox-fruits" value="fruits">
+                <input class="filter-checkbox-input visually-hidden" type="checkbox" id="fruits" name="checkbox-fruits" value="fruits">
                 <label class="filter-checkbox-label" for="fruits">фрукты</label>
               </div>
               <div class="filter-field">
-                <input class="filter-checkbox-input" type="checkbox" id="syrups" name="checkbox-syrups" value="syrups">
+                <input class="filter-checkbox-input visually-hidden" type="checkbox" id="syrups" name="checkbox-syrups" value="syrups">
                 <label class="filter-checkbox-label" for="syrups">сиропы</label>
               </div>
               <div class="filter-field">
-                <input class="filter-checkbox-input" type="checkbox" id="jam" name="checkbox-jam" value="jam">
+                <input class="filter-checkbox-input visually-hidden" type="checkbox" id="jam" name="checkbox-jam" value="jam">
                 <label class="filter-checkbox-label" for="jam">джемы</label>
               </div>
             </div>
@@ -425,4 +429,5 @@
     </div>
   </footer>
 </body>
+
 </html>
