@@ -7,10 +7,10 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/180.png">
-  <link rel="manifest" href="img/manifest.webmanifest">
+  <link rel="manifest" href="img/manifest.webmanifest" crossorigin="use-credentials">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page-body page-body-bg-1 index-body">
@@ -23,7 +23,7 @@
       <nav class="main-navigation">
         <ul class="main-menu list-reset">
           <li class="main-menu-item">
-            <a class="main-menu-link" href="catalog.html">
+            <a class="main-menu-link" href="#">
               <span>
                 Каталог
               </span>
@@ -33,7 +33,7 @@
                 <a class="submenu-link">Новинки</a>
               </li>
               <li class="submenu-item">
-                <a class="submenu-link" href="#">Сливочное</a>
+                <a class="submenu-link" href="catalog.html">Сливочное</a>
               </li>
               <li class="submenu-item">
                 <a class="submenu-link" href="#">Щербеты</a>
@@ -47,14 +47,14 @@
             </ul>
           </li>
           <li class="main-menu-item">
-            <a class="main-menu-link" href="delivery.html">
+            <a class="main-menu-link" href="#">
               <span>
                 Доставка и оплата
               </span>
             </a>
           </li>
           <li class="main-menu-item">
-            <a class="main-menu-link" href="about-company.html">
+            <a class="main-menu-link" href="#">
               <span>
                 О компании
               </span>
@@ -96,10 +96,12 @@
                     <input class="text-field field-password-input" type="password" name="password" placeholder="...">
                   </label>
                 </div>
-                <button class="button button-signin" type="submit">Войти</button>
-                <div class="form-authorization-links">
-                  <a href="#">Забыли пароль?</a>
-                  <a href="#">Новая регистрация</a>
+                <div class="form-field">
+                  <button class="button button-signin" type="submit">Войти</button>
+                  <div class="form-authorization-links">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                  </div>
                 </div>
               </form>
             </div>
@@ -153,20 +155,20 @@
         <div class="switcher-slider">
           <ul class="switcher-list list-reset">
             <li class="switcher-item">
-              <button class="switcher-button switcher-button-current" onclick="currentSlide(1)" type="button" aria-label="Первый слайд"></button>
+              <button class="switcher-button switcher-button-current" data-slide="1" type="button" aria-label="Первый слайд"></button>
             </li>
             <li class="switcher-item">
-              <button class="switcher-button" onclick="currentSlide(2)" type="button" aria-label="Второй слайд"></button>
+              <button class="switcher-button" type="button" data-slide="2" aria-label="Второй слайд"></button>
             </li>
             <li class="switcher-item">
-              <button class="switcher-button" onclick="currentSlide(3)" type="button" aria-label="Третий слайд"></button>
+              <button class="switcher-button" type="button" data-slide="3" aria-label="Третий слайд"></button>
             </li>
           </ul>
         </div>
       </div>
 
       <section class="stocks">
-        <div class="stock stock-rasberry">
+        <div class="stock stock-raspberry">
           <h3 class="stock-name">Малинка даром!</h3>
           <p class="stock-description">
             При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
@@ -186,37 +188,43 @@
         <h2 class="visually-hidden">Хиты продаж</h2>
         <ul class="products-list list-reset">
           <li class="product-item product-hit">
-            <h3 class="product-title">
-              <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-            </h3>
-            <img class="product-photo" src="img/catalog/orange-jam.jpg" width="267" height="267" alt="Оранжевое мороженное с апельсиновым джемом и цитрусовой стружкой">
-            <p class="product-price">310 ₽<span>/кг</span></p>
+            <div class="product-item-wrapper">
+              <h3 class="product-title">
+                <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+              </h3>
+              <img class="product-photo" src="img/catalog/orange-jam.jpg" width="267" height="267" alt="Оранжевое мороженное с апельсиновым джемом и цитрусовой стружкой">
+              <p class="product-price">310 ₽<span>/кг</span></p>
+            </div>
             <a class="button product-preview product-preview-hidden" href="">Быстрый просмотр</a>
           </li>
           <li class="product-item product-hit">
-            <h3 class="product-title">
-              <a href="#">
-                Сливочно-кофейное с кусочками шоколада
-              </a>
-            </h3>
-            <img class="product-photo" src="img/catalog/coffee.jpg" width="267" height="267" alt="Кофейное мороженное с кусочками шоколада">
-            <p class="product-price">380 ₽<span>/кг</span></p>
+            <div class="product-item-wrapper">
+              <h3 class="product-title">
+                <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+              </h3>
+              <img class="product-photo" src="img/catalog/coffee.jpg" width="267" height="267" alt="Кофейное мороженное с кусочками шоколада">
+              <p class="product-price">380 ₽<span>/кг</span></p>
+            </div>
             <a class="button product-preview product-preview-hidden" href="">Быстрый просмотр</a>
           </li>
           <li class="product-item product-hit">
-            <h3 class="product-title">
-              <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-            </h3>
-            <img class="product-photo" src="img/catalog/strawberry.jpg" width="267" height="267" alt="Розовое клубничное мороженое с присыпкой сердечками">
-            <p class="product-price">355 ₽<span>/кг</span></p>
+            <div class="product-item-wrapper">
+              <h3 class="product-title">
+                <a href="#">Сливочно-клубничное<br> с присыпкой из белого шоколада</a>
+              </h3>
+              <img class="product-photo" src="img/catalog/strawberry.jpg" width="267" height="267" alt="Розовое клубничное мороженое с присыпкой сердечками">
+              <p class="product-price">355 ₽<span>/кг</span></p>
+            </div>
             <a class="button product-preview product-preview-hidden" href="">Быстрый просмотр</a>
           </li>
           <li class="product-item product-hit">
-            <h3 class="product-title">
-              <a href="#">Сливочное крем-брюле<br> с карамельной подливкой</a>
-            </h3>
-            <img class="product-photo" src="img/catalog/caramel.jpg" width="267" height="267" alt="Бежевое ванильное мороженое с карамельным соусом">
-            <p class="product-price">415 ₽<span>/кг</span></p>
+            <div class="product-item-wrapper">
+              <h3 class="product-title">
+                <a href="#">Сливочное крем-брюле<br> с карамельной подливкой</a>
+              </h3>
+              <img class="product-photo" src="img/catalog/caramel.jpg" width="267" height="267" alt="Бежевое ванильное мороженое с карамельным соусом">
+              <p class="product-price">415 ₽<span>/кг</span></p>
+            </div>
             <a class="button product-preview product-preview-hidden" href="">Быстрый просмотр</a>
           </li>
         </ul>
@@ -256,6 +264,8 @@
     </div>
 
     <section class="map">
+      <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8226084133094!2d30.315220216355527!3d59.96826598188697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1625173235438!5m2!1sru!2sru" width="100%" height="450" allowfullscreen="" title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург" loading="lazy">
+      </iframe> -->
       <div class="container">
         <h2 class="visually-hidden">Карта</h2>
         <div class="map-contacts">
@@ -344,7 +354,7 @@
 
   <div class="container">
     <div class="popup-feedback popup-feedback-hidden">
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form class="popup-feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <h3>Мы обязательно вам ответим!</h3>
         <div class="field-feedback-name">
           <label class="visually-hidden" for="feedback-name">Имя и фамилия</label>
@@ -356,11 +366,11 @@
         </div>
         <textarea class="text-field field-textarea" placeholder="В свободной форме"></textarea>
         <button type="submit" class="button button-submit">Отправить</button>
-        <button type="button" class="button-close">Закрыть</button>
+        <button type="button" class="button-close" arai-label="Закрыть"></button>
       </form>
     </div>
   </div>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
