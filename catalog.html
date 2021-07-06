@@ -22,13 +22,13 @@
       <nav class="main-navigation">
         <ul class="main-menu list-reset">
           <li class="main-menu-item">
-            <a class="main-menu-link main-menu-current">Каталог</a>
+            <a class="main-menu-link main-menu-current" href="#">Каталог</a>
             <ul class="submenu list-reset">
               <li class="submenu-item">
                 <a class="submenu-link">Новинки</a>
               </li>
               <li class="submenu-item">
-                <a class="submenu-link submenu-link-current" href="#">Сливочное</a>
+                <a class="submenu-link submenu-link-current">Сливочное</a>
               </li>
               <li class="submenu-item">
                 <a class="submenu-link" href="#">Щербеты</a>
@@ -93,7 +93,7 @@
               </form>
             </div>
           </li>
-          <li class="user-block-item cart">
+          <li class="user-block-item cart cart-full">
             <a class="user-button cart-button cart-button-full" href="#">2 товара
               <svg width="21" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="icon-cart" d="M5.703 2l-.241-2H0v2h3.668l1.511 13h14.108L21 2H5.703zm11.8 11H6.973L5.965 4h12.727l-1.189 9zM7.034 20a2.008 2.008 0 002.015-2c0-1.105-.902-2-2.015-2a2.008 2.008 0 00-2.016 2c0 1.105.903 2 2.016 2zM16.103 20a2.008 2.008 0 002.015-2c0-1.105-.902-2-2.015-2a2.008 2.008 0 00-2.016 2c0 1.105.903 2 2.016 2z" fill="#fff" />
@@ -169,9 +169,9 @@
             <legend class="form-legend form-price-legend">Цена: 100 ₽ – 500 ₽</legend>
             <div class="range-filter">
               <div class="range-scale">
-                <button class="toggle toggle-min"></button>
+                <button class="toggle toggle-min" type="button"></button>
                 <div class="range-bar"></div>
-                <button class="toggle toggle-max"></button>
+                <button class="toggle toggle-max" type="button"></button>
               </div>
             </div>
           </fieldset>
@@ -223,7 +223,7 @@
               </div>
             </div>
           </fieldset>
-          <button class="button-apply" type="button">Применить</button>
+          <button class="button-apply" type="submit">Применить</button>
         </div>
       </form>
 
@@ -357,25 +357,25 @@
 
       <ul class="pagination-list list-reset">
         <li class="pagination-item pagination-item-prev">
-          <a></a>
+          <a class="pagination-link" aria-label="Предыдущая страница"></a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-current">1</a>
+          <a class="pagination-link pagination-current">1</a>
         </li>
         <li class="pagination-item">
-          <a href="#">2</a>
+          <a class="pagination-link" href="#">2</a>
         </li>
         <li class="pagination-item">
-          <a href="#">3</a>
+          <a class="pagination-link" href="#">3</a>
         </li>
         <li class="pagination-item">
-          <a href="#">4</a>
+          <a class="pagination-link" href="#">4</a>
         </li>
         <li class="pagination-item">
-          <a href="#">5</a>
+          <a class="pagination-link" href="#">5</a>
         </li>
         <li class="pagination-item pagination-item-next">
-          <a href="#"></a>
+          <a class="pagination-link" aria-label="Следующая страница" href="#"></a>
         </li>
       </ul>
     </div>
@@ -446,9 +446,11 @@
     </ul>
 
     <div class="footer-copyright">
-      <img src="img/logo/html-academy.svg" width="108" height="31" alt="Логотип HTMLAcademy">
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/logo/html-academy.svg" width="108" height="31" alt="Логотип HTMLAcademy">
+      </a>
       <p>Сделано в
-        <a href="https://htmlacademy.ru/" class="link-htmlacademy">HTML Academy</a> © 2021
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="link-htmlacademy">HTML Academy</a> © 2021
       </p>
     </div>
   </footer>
