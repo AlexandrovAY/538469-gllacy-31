@@ -532,6 +532,7 @@ img {
   background-image: linear-gradient(180deg, var(--basic-red-300) 0%, var(--basic-red-450) 100%);
   box-shadow: 0 2px 2px var(--basic-red-opacity-64);
   border-radius: 26px;
+  margin-top: auto;
 }
 
 .button:hover {
@@ -747,13 +748,13 @@ img {
 
 .stock-description {
   margin: 0;
+  margin-bottom: 22px;
   font-size: 18px;
   line-height: 22px;
   font-weight: bold;
 }
 
 .stock-buy {
-  margin-top: auto;
   margin-left: auto;
   padding: 12px 22px;
 }
@@ -883,8 +884,6 @@ img {
   border-radius: 50px;
 }
 
-
-
 .company-list {
   display: flex;
   flex-wrap: wrap;
@@ -900,6 +899,7 @@ img {
   color: var(--basic-gray-800);
   background-color: var(--basic-beige);
   background-image: url("../img/pattern.jpg");
+  background-size: cover;
   background-repeat: repeat;
   background-position: 0 0;
 }
@@ -1025,6 +1025,9 @@ img {
 }
 
 .subscription-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 210px;
   padding-top: 24px;
   padding-right: 21px;
   padding-bottom: 35px;
@@ -1035,7 +1038,7 @@ img {
 
 .subscription-description {
   margin: 0;
-  margin-bottom: 41px;
+  margin-bottom: 22px;
   color: var(--basic-gray-500);
 }
 
@@ -1043,6 +1046,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: auto;
 }
 
 .subscription-input {
@@ -1634,7 +1638,7 @@ img {
 
 .select-icon {
   position: absolute;
-  top: 12px;
+  top: 35px;
   right: 13px;
   pointer-events: none;
   border-style: solid;
@@ -1679,6 +1683,7 @@ img {
 }
 
 .form-legend {
+  display: block;
   margin-bottom: 7px;
   margin-left: 16px;
 }

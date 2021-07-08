@@ -7,7 +7,7 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/180.png">
-  <link rel="manifest" href="img/manifest.webmanifest" crossorigin="use-credentials">
+  <link rel="manifest" href="manifest.webmanifest" crossorigin="use-credentials">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.min.css">
@@ -156,8 +156,8 @@
         <h2 class="visually-hidden">Фильтры</h2>
         <div class="index-row">
           <fieldset class="form-sorting">
-            <legend class="form-legend form-sorting-legend">Сортировка</legend>
-            <select class="sorting" name="sorting">
+            <label class="form-legend form-sorting-legend" for="id-sorting">Сортировка</label>
+            <select class="sorting" name="sorting" id="id-sorting">
               <option class="sorting-item" value="by popularity">по популярности</option>
               <option class="sorting-item" value="ascending">сначала недорогие</option>
               <option class="sorting-item" value="descending">сначала дорогие</option>
